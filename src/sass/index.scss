@@ -1,0 +1,44 @@
+@mixin textDecorationBlack (){
+    text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+}
+
+@mixin textDecorationBlue() {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+@mixin textDecorationWhite() {
+    text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+#poke-deck{
+    .box_init{
+        width: 50%;
+        height: 500px;
+        padding: 20px;
+        background-color: red;
+        margin: 0px auto;
+        border-radius: 10px;
+    }
+
+    .box_second{
+        width: 90%;
+        height: 220px;
+        padding: 10px;
+        background-color: white;
+        margin: 0px auto;
+        border-radius: 10px;
+    }
+
+    #id_pokemon{
+        @include textDecorationWhite();
+    }
+
+    .class_decoration{
+        color: white;
+        @include textDecorationBlack()
+    }
+}

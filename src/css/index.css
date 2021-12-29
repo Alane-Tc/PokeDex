@@ -1,0 +1,29 @@
+body {
+  background-color: #f8f9fa;
+}
+
+#poke-deck .box_init {
+  width: 50%;
+  height: 500px;
+  padding: 20px;
+  background-color: red;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+#poke-deck .box_second {
+  width: 90%;
+  height: 220px;
+  padding: 10px;
+  background-color: white;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+#poke-deck #id_pokemon {
+  text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+}
+#poke-deck .class_decoration {
+  color: white;
+  text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+}
+
+/*# sourceMappingURL=index.css.map */
