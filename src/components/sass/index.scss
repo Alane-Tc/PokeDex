@@ -14,7 +14,19 @@ body{
     background-color: #f8f9fa;
 }
 
+#title_logo{
+    @include textDecorationBlack();
+    margin: 2rem;
+}
+
 #poke-deck{
+    .box_input{
+        width: 50%;
+        height: auto;
+        padding: 20px;
+        margin: 0px auto;
+    }
+
     .box_init{
         width: 50%;
         height: 500px;

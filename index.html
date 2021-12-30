@@ -13,20 +13,23 @@
 <body>
     <!--Header-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-warning border border-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-warning border border-dark  justify-content-center" style="padding: 15px;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo_header" src="src/assets/icons/entrenador-pokemon.png" alt="Logo" width="60px" height="60px">
+                    <span id="title_logo">¿Quién es ese pokémon?</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#poke-deck">Inicio</a>
-                        </li>
-                    </ul>
+                        </li> -->
+                    </ul> 
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Nombre o ID" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -42,6 +45,13 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
+
+                    <div class="mb-3 box_input">
+                        <label for="exampleFormControlInput1" class="form-label">Buscar Pokémon</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre o id">
+                        <!-- <button class="btn btn-outline-success" type="submit">Buscar</button> -->
+                    </div>
+                    
                     <div class="box_init">
                         <div class="col-12">
                             <div class="box_second">
