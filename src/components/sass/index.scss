@@ -10,6 +10,12 @@
     text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
 }
 
+@mixin sombras(){
+    -webkit-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+    box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+}
+
 body{
     background-color: #f8f9fa;
 }
@@ -17,6 +23,10 @@ body{
 #title_logo{
     @include textDecorationBlack();
     margin: 2rem;
+}
+
+#div-search-pokemon{
+    display: none;
 }
 
 #poke-deck{
@@ -31,9 +41,11 @@ body{
         width: 50%;
         height: 500px;
         padding: 20px;
-        background-color: red;
         margin: 0px auto;
         border-radius: 10px;
+        margin-top: 45px;
+        background-color: #ef476f;
+        @include sombras()
     }
 
     .box_second{
