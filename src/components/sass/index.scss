@@ -16,6 +16,8 @@
     box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
 }
 
+$colorbtn: #198754;
+
 body{
     background-color: #f8f9fa;
 }
@@ -25,13 +27,9 @@ body{
     margin: 2rem;
 }
 
-#div-search-pokemon{
-    display: none;
-}
-
 #poke-deck{
     .box_input{
-        width: 50%;
+        width: 100%;
         height: auto;
         padding: 20px;
         margin: 0px auto;
@@ -39,7 +37,7 @@ body{
 
     .box_init{
         width: 50%;
-        height: 500px;
+        height: auto;
         padding: 20px;
         margin: 0px auto;
         border-radius: 10px;
@@ -59,10 +57,68 @@ body{
 
     #id_pokemon{
         @include textDecorationWhite();
+        text-transform: uppercase;
+        margin-bottom: 15px;
     }
 
     .class_decoration{
         color: white;
         @include textDecorationBlack()
     }
+
+    #img_pokemon{
+        width: 35%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .button {
+        font-family: inherit;
+        display: inline-block;
+        width: 8em;
+        height: 2.6em;
+        line-height: 2.5em;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid $colorbtn;
+        transition: color .5s;
+        z-index: 1;
+        font-size: 17px;
+        border-radius: 6px;
+        font-weight: 500;
+        color: $colorbtn;
+       }
+       
+       .button:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: $colorbtn;
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+       }
+       
+       .button:hover {
+        color: #fff;
+       }
+       
+       .button:before {
+        top: 100%;
+        left: 100%;
+        transition: all .7s;
+       }
+       
+       .button:hover:before {
+        top: -30px;
+        left: -30px;
+       }
+       
+       .button:active:before {
+        background: $colorbtn;
+        transition: background 0s;
+       }
+
+       
+
 }
