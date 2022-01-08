@@ -1,0 +1,92 @@
+body {
+  background-color: #f8f9fa;
+}
+
+#title_logo {
+  text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+  margin: 2rem;
+}
+
+#poke-deck .box_input {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0px auto;
+}
+#poke-deck .box_init {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  margin: 0px auto;
+  border-radius: 10px;
+  margin-top: 45px;
+  background-color: #ef476f;
+  -webkit-box-shadow: 14px 10px 9px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 10px 9px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 10px 9px -6px rgba(0, 0, 0, 0.75);
+}
+#poke-deck .box_second {
+  width: 90%;
+  height: 220px;
+  padding: 10px;
+  background-color: white;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+#poke-deck #id_pokemon {
+  text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#poke-deck .class_decoration {
+  color: white;
+  text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+}
+#poke-deck #img_pokemon {
+  width: 35%;
+  display: block;
+  margin: 0px auto;
+}
+#poke-deck .button {
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #198754;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #198754;
+}
+#poke-deck .button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #198754;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+#poke-deck .button:hover {
+  color: #fff;
+}
+#poke-deck .button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+#poke-deck .button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+#poke-deck .button:active:before {
+  background: #198754;
+  transition: background 0s;
+}
+
+/*# sourceMappingURL=index.css.map */

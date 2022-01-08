@@ -1,0 +1,124 @@
+@mixin textDecorationBlack (){
+    text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+}
+
+@mixin textDecorationBlue() {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+@mixin textDecorationWhite() {
+    text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+}
+
+@mixin sombras(){
+    -webkit-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+    box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+}
+
+$colorbtn: #198754;
+
+body{
+    background-color: #f8f9fa;
+}
+
+#title_logo{
+    @include textDecorationBlack();
+    margin: 2rem;
+}
+
+#poke-deck{
+    .box_input{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 0px auto;
+    }
+
+    .box_init{
+        width: 50%;
+        height: auto;
+        padding: 20px;
+        margin: 0px auto;
+        border-radius: 10px;
+        margin-top: 45px;
+        background-color: #ef476f;
+        @include sombras()
+    }
+
+    .box_second{
+        width: 90%;
+        height: 220px;
+        padding: 10px;
+        background-color: white;
+        margin: 0px auto;
+        border-radius: 10px;
+    }
+
+    #id_pokemon{
+        @include textDecorationWhite();
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .class_decoration{
+        color: white;
+        @include textDecorationBlack()
+    }
+
+    #img_pokemon{
+        width: 35%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .button {
+        font-family: inherit;
+        display: inline-block;
+        width: 8em;
+        height: 2.6em;
+        line-height: 2.5em;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid $colorbtn;
+        transition: color .5s;
+        z-index: 1;
+        font-size: 17px;
+        border-radius: 6px;
+        font-weight: 500;
+        color: $colorbtn;
+       }
+       
+       .button:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: $colorbtn;
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+       }
+       
+       .button:hover {
+        color: #fff;
+       }
+       
+       .button:before {
+        top: 100%;
+        left: 100%;
+        transition: all .7s;
+       }
+       
+       .button:hover:before {
+        top: -30px;
+        left: -30px;
+       }
+       
+       .button:active:before {
+        background: $colorbtn;
+        transition: background 0s;
+       }
+
+       
+
+}
