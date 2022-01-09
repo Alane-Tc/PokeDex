@@ -1,3 +1,11 @@
+@font-face {
+  font-family: PokemonHollow;
+  src: url(../../assets/fonts/Pokemon\ Hollow.ttf);
+}
+@font-face {
+  font-family: PokemonSolid;
+  src: url(../../assets/fonts/Pokemon\ Solid.ttf);
+}
 body {
   background-color: #f8f9fa;
 }
@@ -34,9 +42,12 @@ body {
   border-radius: 10px;
 }
 #poke-deck #id_pokemon {
-  text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+  text-shadow: 3px 3px 0 #4074b5, 3px -3px 0 #4074b5, -3px 3px 0 #4074b5, -3px -3px 0 #4074b5, 3px 0px 0 #4074b5, 0px 3px 0 #4074b5, -3px 0px 0 #4074b5, 0px -3px 0 #4074b5;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  font-family: PokemonSolid;
+  letter-spacing: 10px;
+  color: #e2e215;
 }
 #poke-deck .class_decoration {
   color: white;

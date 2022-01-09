@@ -1,9 +1,19 @@
+@font-face {
+    font-family: PokemonHollow;
+    src: url(../../assets/fonts/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+    font-family: PokemonSolid;
+    src: url(../../assets/fonts/Pokemon\ Solid.ttf);
+}
+
 @mixin textDecorationBlack (){
     text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
 }
 
 @mixin textDecorationBlue() {
-    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    text-shadow: 3px 3px 0 #4074b5, 3px -3px 0 #4074b5, -3px 3px 0 #4074b5, -3px -3px 0 #4074b5, 3px 0px 0 #4074b5, 0px 3px 0 #4074b5, -3px 0px 0 #4074b5, 0px -3px 0 #4074b5
 }
 
 @mixin textDecorationWhite() {
@@ -17,6 +27,8 @@
 }
 
 $colorbtn: #198754;
+
+
 
 body{
     background-color: #f8f9fa;
@@ -56,9 +68,12 @@ body{
     }
 
     #id_pokemon{
-        @include textDecorationWhite();
-        text-transform: uppercase;
-        margin-bottom: 15px;
+        @include textDecorationBlue();
+        text-transform: capitalize;
+        margin-bottom: 3rem;
+        font-family: PokemonSolid;
+        letter-spacing: 10px;
+        color: rgb(226, 226, 21);
     }
 
     .class_decoration{
