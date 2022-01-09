@@ -11,6 +11,7 @@
         }
     
         #poke-deck{
+
             .box_init{
                 width: 100%;
                 height: auto;
@@ -30,7 +31,17 @@
             #id_pokemon{
                 @include marginBottom(1.5rem);
             }
-    
+
+            .img-control{
+                width: 50px;
+            }
+     
+            #img-squere{
+                width: 100px;
+            }
+     
+           
+
         }
        
      }

@@ -26,7 +26,7 @@ body{
         @include padding(20px);
         margin: 0px auto;
         border-radius: 10px;
-        @include marginTop(45px);
+        @include marginTop(25px);
         background-color: #ef476f;
         @include sombras()
     }
@@ -108,6 +108,29 @@ body{
        .button:active:before {
         background: $colorbtn;
         transition: background 0s;
+       }
+
+       .img-control{
+           width: 100px;
+           height: auto;
+       }
+
+       #img-squere{
+           width: 200px;
+           height: auto;
+           display: block;
+           margin: 0px auto;
+       }
+
+       #img-circle{
+           display: block !important;
+           margin: 0px auto !important;
+       }
+
+       .hr{
+           @include line();
+           @include marginTop(1rem);
+           @include marginBottom(1rem);
        }
 
 }
