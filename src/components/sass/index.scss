@@ -1,34 +1,6 @@
-@font-face {
-    font-family: PokemonHollow;
-    src: url(../../assets/fonts/Pokemon\ Hollow.ttf);
-}
-
-@font-face {
-    font-family: PokemonSolid;
-    src: url(../../assets/fonts/Pokemon\ Solid.ttf);
-}
-
-@mixin textDecorationBlack (){
-    text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
-}
-
-@mixin textDecorationBlue() {
-    text-shadow: 3px 3px 0 #4074b5, 3px -3px 0 #4074b5, -3px 3px 0 #4074b5, -3px -3px 0 #4074b5, 3px 0px 0 #4074b5, 0px 3px 0 #4074b5, -3px 0px 0 #4074b5, 0px -3px 0 #4074b5
-}
-
-@mixin textDecorationWhite() {
-    text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
-}
-
-@mixin sombras(){
-    -webkit-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
-    box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
-}
+@import "fonts", "fuction-sass", "responsive";
 
 $colorbtn: #198754;
-
-
 
 body{
     background-color: #f8f9fa;
@@ -37,23 +9,24 @@ body{
 #title_logo{
     @include textDecorationBlack();
     margin: 2rem;
+    font-family: MonstserratBold;
 }
 
 #poke-deck{
     .box_input{
         width: 100%;
         height: auto;
-        padding: 20px;
+        @include padding(20px);
         margin: 0px auto;
     }
 
     .box_init{
         width: 50%;
         height: auto;
-        padding: 20px;
+        @include padding(20px);
         margin: 0px auto;
         border-radius: 10px;
-        margin-top: 45px;
+        @include marginTop(45px);
         background-color: #ef476f;
         @include sombras()
     }
@@ -62,15 +35,18 @@ body{
         width: 90%;
         height: 220px;
         padding: 10px;
-        background-color: white;
         margin: 0px auto;
+        background: rgba( 255, 255, 255, 0.78 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
         border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 
     #id_pokemon{
         @include textDecorationBlue();
         text-transform: capitalize;
-        margin-bottom: 3rem;
+        @include marginBottom(3rem);
         font-family: PokemonSolid;
         letter-spacing: 10px;
         color: rgb(226, 226, 21);
@@ -88,7 +64,7 @@ body{
     }
 
     .button {
-        font-family: inherit;
+        font-family: MonstserratBold;
         display: inline-block;
         width: 8em;
         height: 2.6em;
@@ -134,6 +110,7 @@ body{
         transition: background 0s;
        }
 
-       
-
 }
+
+/*Fuction responsive*/
+@include fuction_responsive();
