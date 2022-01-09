@@ -27,3 +27,9 @@
 @mixin padding($tam) {
     padding: $tam;
 }
+
+@mixin line () {
+
+    height: 5px;
+    background-color: black;
+}
