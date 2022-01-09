@@ -28,19 +28,37 @@ body{
         border-radius: 10px;
         @include marginTop(25px);
         background-color: #ef476f;
-        @include sombras()
+        @include sombras();
+    }
+
+    #box-img-pokemon{
+        background: #495057;
+        width: 85%;
+        border-radius: 10px;
+        border: 28px solid #495057;;
+        margin: 0px auto;
+        @include marginTop(0.5rem);
+        @include marginBottom(00.5rem);
     }
 
     .box_second{
         width: 90%;
-        height: 220px;
+        height: auto;
         padding: 10px;
         margin: 0px auto;
-        background: rgba( 255, 255, 255, 0.78 );
+        background-color: #fff;
+        -webkit-border-bottom-left-radius: 55px;
+        -moz-border-radius-bottomleft: 55px;
+        border-bottom-left-radius: 55px;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        /*background: rgba( 255, 255, 255, 0.78 );
         backdrop-filter: blur( 20px );
         -webkit-backdrop-filter: blur( 20px );
         border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );*/
     }
 
     #id_pokemon{

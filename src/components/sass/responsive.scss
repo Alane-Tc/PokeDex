@@ -23,7 +23,7 @@
             }
     
             #img_pokemon{
-                width: 200px;
+                width: 100px;
                 display: block;
                 margin: 0px auto;
             }
@@ -39,9 +39,13 @@
             #img-squere{
                 width: 100px;
             }
-     
-           
 
+            #box-img-pokemon{
+                background: #495057;
+                width: 80%;
+                border-radius: 10px;
+            }
+     
         }
        
      }
@@ -102,7 +106,7 @@
        #poke-deck{
     
         #img_pokemon{
-            width: 180px;
+            width: 80px;
             display: block;
             margin: 0px auto;
         }

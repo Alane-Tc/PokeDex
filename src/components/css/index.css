@@ -42,16 +42,33 @@ body {
   -moz-box-shadow: 14px 10px 9px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 14px 10px 9px -6px rgba(0, 0, 0, 0.75);
 }
+#poke-deck #box-img-pokemon {
+  background: #495057;
+  width: 85%;
+  border-radius: 10px;
+  border: 28px solid #495057;
+  margin: 0px auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 #poke-deck .box_second {
   width: 90%;
-  height: 220px;
+  height: auto;
   padding: 10px;
   margin: 0px auto;
-  background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background-color: #fff;
+  -webkit-border-bottom-left-radius: 55px;
+  -moz-border-radius-bottomleft: 55px;
+  border-bottom-left-radius: 55px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  /*background: rgba( 255, 255, 255, 0.78 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
 #poke-deck #id_pokemon {
   text-shadow: 3px 3px 0 #4074b5, 3px -3px 0 #4074b5, -3px 3px 0 #4074b5, -3px -3px 0 #4074b5, 3px 0px 0 #4074b5, 0px 3px 0 #4074b5, -3px 0px 0 #4074b5, 0px -3px 0 #4074b5;
@@ -149,7 +166,7 @@ body {
     width: 100%;
   }
   #poke-deck #img_pokemon {
-    width: 200px;
+    width: 100px;
     display: block;
     margin: 0px auto;
   }
@@ -161,6 +178,11 @@ body {
   }
   #poke-deck #img-squere {
     width: 100px;
+  }
+  #poke-deck #box-img-pokemon {
+    background: #495057;
+    width: 80%;
+    border-radius: 10px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -199,7 +221,7 @@ body {
   }
 
   #poke-deck #img_pokemon {
-    width: 180px;
+    width: 80px;
     display: block;
     margin: 0px auto;
   }
