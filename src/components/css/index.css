@@ -1,3 +1,19 @@
+@font-face {
+  font-family: PokemonHollow;
+  src: url(../../assets/fonts/Pokemon\ Hollow.ttf);
+}
+@font-face {
+  font-family: PokemonSolid;
+  src: url(../../assets/fonts/Pokemon\ Solid.ttf);
+}
+@font-face {
+  font-family: MonstserratBold;
+  src: url(../../assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: MonstserratRegular;
+  src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
 body {
   background-color: #f8f9fa;
 }
@@ -5,6 +21,7 @@ body {
 #title_logo {
   text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
   margin: 2rem;
+  font-family: MonstserratBold;
 }
 
 #poke-deck .box_input {
@@ -29,14 +46,20 @@ body {
   width: 90%;
   height: 220px;
   padding: 10px;
-  background-color: white;
   margin: 0px auto;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 #poke-deck #id_pokemon {
-  text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+  text-shadow: 3px 3px 0 #4074b5, 3px -3px 0 #4074b5, -3px 3px 0 #4074b5, -3px -3px 0 #4074b5, 3px 0px 0 #4074b5, 0px 3px 0 #4074b5, -3px 0px 0 #4074b5, 0px -3px 0 #4074b5;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  font-family: PokemonSolid;
+  letter-spacing: 10px;
+  color: #e2e215;
 }
 #poke-deck .class_decoration {
   color: white;
@@ -48,7 +71,7 @@ body {
   margin: 0px auto;
 }
 #poke-deck .button {
-  font-family: inherit;
+  font-family: MonstserratBold;
   display: inline-block;
   width: 8em;
   height: 2.6em;
@@ -87,6 +110,73 @@ body {
 #poke-deck .button:active:before {
   background: #198754;
   transition: background 0s;
+}
+
+/*Fuction responsive*/
+@media (max-width: 575.98px) {
+  /*body{background: red;}*/
+  #title_logo {
+    margin: 0px auto;
+    font-size: 17px;
+  }
+
+  #poke-deck .box_init {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  #poke-deck .box_input {
+    width: 100%;
+  }
+  #poke-deck #img_pokemon {
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+  }
+  #poke-deck #id_pokemon {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*body{background: green;}*/
+  #poke-deck .box_init {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  #poke-deck #img_pokemon {
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+  }
+  #poke-deck #id_pokemon {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*body{background: yellow;}*/
+  #poke-deck .box_init {
+    width: 100%;
+    height: auto;
+  }
+  #poke-deck #img_pokemon {
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 240px) and (max-width: 310px) {
+  /*body{background-color: green;}*/
+  #title_logo {
+    margin: 0px auto;
+    font-size: 12px;
+  }
+
+  #poke-deck #img_pokemon {
+    width: 180px;
+    display: block;
+    margin: 0px auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

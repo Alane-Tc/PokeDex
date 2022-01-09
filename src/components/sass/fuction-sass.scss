@@ -1,0 +1,29 @@
+@mixin textDecorationBlack (){
+    text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
+}
+
+@mixin textDecorationBlue() {
+    text-shadow: 3px 3px 0 #4074b5, 3px -3px 0 #4074b5, -3px 3px 0 #4074b5, -3px -3px 0 #4074b5, 3px 0px 0 #4074b5, 0px 3px 0 #4074b5, -3px 0px 0 #4074b5, 0px -3px 0 #4074b5
+}
+
+@mixin textDecorationWhite() {
+    text-shadow: 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+}
+
+@mixin sombras(){
+    -webkit-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+    box-shadow: 14px 10px 9px -6px rgba(0,0,0,0.75);
+}
+
+@mixin marginBottom($tam) {
+    margin-bottom: $tam;
+}
+
+@mixin marginTop($tam) {
+    margin-top: $tam;
+}
+
+@mixin padding($tam) {
+    padding: $tam;
+}
