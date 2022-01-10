@@ -1,4 +1,4 @@
-@import "fonts", "fuction-sass", "responsive";
+@import "fonts", "fuction-sass", "responsive", "styles-modal";
 
 $colorbtn: #198754;
 
@@ -155,3 +155,7 @@ body{
 
 /*Fuction responsive*/
 @include fuction_responsive();
+
+
+/*Modal*/
+@include fuctionModalStyles();
