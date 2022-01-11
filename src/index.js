@@ -28,6 +28,7 @@ const search = (() => {
                     position: 'top-center',
                     icon: 'success',
                     title: 'Pokémon encontrado con éxito',
+                    backdrop: `rgb(9 79 167 / 40%)`,
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -74,6 +75,7 @@ const search = (() => {
                     showConfirmButton: false,
                     showCloseButton: true,
                     background: '#ffc107',
+                    backdrop: `rgb(9 79 167 / 40%)`
                 })
 
             }, 2500)
@@ -84,6 +86,7 @@ const search = (() => {
                 title: 'Error!',
                 text: `No existe el id o nombre: ${inputPokemon.value}`,
                 icon: 'error',
+                backdrop: `rgba( 208, 2, 27, 0.15 )`,
                 confirmButtonText: 'Continuar'
             })
             console.clear()
@@ -97,6 +100,7 @@ const search = (() => {
                 title: 'Error!',
                 text: `Algo salió mal, intentelo de nuevo`,
                 icon: 'error',
+                backdrop: `rgba( 208, 2, 27, 0.15 )`,
                 confirmButtonText: 'Continuar'
             })
             input.value = ""

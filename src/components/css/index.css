@@ -15,8 +15,8 @@
   src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }
 @font-face {
-  font-family: BebasNeueRegular;
-  src: url(../../assets/fonts/BebasNeue-Regular.ttf);
+  font-family: MochiyPopOneRegular;
+  src: url(../../assets/fonts/MochiyPopPOne-Regular.ttf);
 }
 @font-face {
   font-family: PokemonHollow;
@@ -35,8 +35,8 @@
   src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }
 @font-face {
-  font-family: BebasNeueRegular;
-  src: url(../../assets/fonts/BebasNeue-Regular.ttf);
+  font-family: MochiyPopOneRegular;
+  src: url(../../assets/fonts/MochiyPopPOne-Regular.ttf);
 }
 body {
   background-color: #f8f9fa;
@@ -88,11 +88,6 @@ body {
   border-right: 3px solid black;
   border-bottom: 3px solid black;
   border-left: 3px solid black;
-  /*background: rgba( 255, 255, 255, 0.78 );
-  backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
 #poke-deck #id_pokemon {
   text-shadow: 3px 3px 0 #4074b5, 3px -3px 0 #4074b5, -3px 3px 0 #4074b5, -3px -3px 0 #4074b5, 3px 0px 0 #4074b5, 0px 3px 0 #4074b5, -3px 0px 0 #4074b5, 0px -3px 0 #4074b5;
@@ -268,6 +263,8 @@ body {
   text-shadow: 2px 2px 0 #212529, 2px -2px 0 #212529, -2px 2px 0 #212529, -2px -2px 0 #212529, 2px 0px 0 #212529, 0px 2px 0 #212529, -2px 0px 0 #212529, 0px -2px 0 #212529;
   border-radius: 20px;
   border: 4px solid black;
+  font-family: MochiyPopOneRegular;
+  letter-spacing: 3px;
 }
 
 .box-img-modal {
