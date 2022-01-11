@@ -106,6 +106,10 @@ body {
   display: block;
   margin: 0px auto;
 }
+#poke-deck .img-control-menos {
+  width: 25%;
+  margin-left: 25px;
+}
 #poke-deck .button {
   font-family: MonstserratBold;
   display: inline-block;
@@ -203,6 +207,9 @@ body {
     width: 80%;
     border-radius: 10px;
   }
+  #poke-deck .img-control-menos {
+    margin-left: 8px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   /*body{background: green;}*/
@@ -219,6 +226,9 @@ body {
   #poke-deck #id_pokemon {
     margin-bottom: 2rem;
   }
+  #poke-deck .img-control-menos {
+    margin-left: 15px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   /*body{background: yellow;}*/
@@ -232,6 +242,12 @@ body {
     margin: 0px auto;
   }
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*body{background: blue;}*/
+  .img-control-menos {
+    margin-left: 15px !important;
+  }
+}
 @media (min-width: 240px) and (max-width: 310px) {
   /*body{background-color: green;}*/
   #title_logo {
@@ -243,6 +259,10 @@ body {
     width: 80px;
     display: block;
     margin: 0px auto;
+  }
+  #poke-deck .img-control-menos {
+    margin-left: 2px;
+    width: 20% !important;
   }
 }
 /*Modal*/
