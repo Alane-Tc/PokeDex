@@ -41,7 +41,7 @@ const search = (() => {
                 Swal.fire({
                     html: `
                     <div class="box-img-modal">
-                        <img src="${objPokemon.imagePokemon}" alt="Square">
+                        <img src="${objPokemon.imagePokemon}" alt="pokemon">
                     </div>
 
                     <section class="box-modal">
@@ -71,6 +71,9 @@ const search = (() => {
                     </div>
                     
                 </section>`,
+                    showConfirmButton: false,
+                    showCloseButton: true,
+                    background: '#ffc107',
                 })
 
             }, 2500)

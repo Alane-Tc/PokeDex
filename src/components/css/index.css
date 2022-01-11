@@ -14,6 +14,30 @@
   font-family: MonstserratRegular;
   src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url(../../assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: PokemonHollow;
+  src: url(../../assets/fonts/Pokemon\ Hollow.ttf);
+}
+@font-face {
+  font-family: PokemonSolid;
+  src: url(../../assets/fonts/Pokemon\ Solid.ttf);
+}
+@font-face {
+  font-family: MonstserratBold;
+  src: url(../../assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: MonstserratRegular;
+  src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url(../../assets/fonts/BebasNeue-Regular.ttf);
+}
 body {
   background-color: #f8f9fa;
 }
@@ -247,7 +271,7 @@ body {
 }
 
 .box-img-modal {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   height: 120px;
 }
 .box-img-modal img {

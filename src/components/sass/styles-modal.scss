@@ -1,4 +1,4 @@
-@import "fuction-sass";
+@import "fuction-sass", "fonts";
 
 @mixin fuctionModalStyles {
     
@@ -16,6 +16,7 @@
         @include textDecorationBlack ();
         border-radius: 20px;
         border: 4px solid black;
+        //font-family: BebasNeueRegular;
     }
 
     .box-img-modal{
