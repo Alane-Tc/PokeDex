@@ -1,4 +1,4 @@
-const header = (() =>{
+const header = (() => {
     const header = document.querySelector("#navbar-header");
     header.innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-dark bg-warning border border-dark  justify-content-center"
