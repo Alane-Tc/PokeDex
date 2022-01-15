@@ -15,13 +15,6 @@ const search = (() => {
         try {
             const pokemon = await getPokemon(id)
 
-            const objPokemon = {
-                imagePokemon: pokemon.sprites.front_default,
-                pokemonName: pokemon.species.name,
-                atack: pokemon.stats[1].base_stat,
-                defence: pokemon.stats[2].base_stat
-            }
-
             setTimeout(() => {
 
                 Swal.fire({
@@ -33,45 +26,14 @@ const search = (() => {
                     timer: 1500
                 })
 
-                imgPokemon.src = objPokemon.imagePokemon;
-                namePokemon.textContent = objPokemon.pokemonName;
+                imgPokemon.src = pokemon.sprites.front_default;
+                namePokemon.textContent = pokemon.species.name;
 
             }, 1000)
 
             setTimeout(() => {
                 Swal.fire({
-                    html: `
-                    <div class="box-img-modal">
-                        <img src="${objPokemon.imagePokemon}" alt="pokemon">
-                    </div>
-
-                    <section class="box-modal">
-
-                    <h1 id="modal_pokemon_name">${objPokemon.pokemonName}</h1>
-                    
-                    <div class="container">
-                    <div class="row align-items-center">
-
-                        <div class="col-6">
-                            <h4 class="text-left mt-3 class_decoration">Ataque</h4>
-                        </div>
-
-                        <div class="col">
-                            <h4 id="id_abilities" class="text-center mt-3 class_decoration">${objPokemon.atack}</h4>
-                        </div>
-
-                        <div class="col-6 mt-4">
-                            <h4 class="text-left class_decoration">Defensa</h4> <br>
-                        </div>
-
-                        <div class="col mt-4">
-                            <h4 class="text-center class_decoration">${objPokemon.defence}</h4> <br>
-                        </div> 
-                    </div>
-
-                    </div>
-                    
-                </section>`,
+                    html: createHtml(pokemon),
                     showConfirmButton: false,
                     showCloseButton: true,
                     background: '#ffc107',
@@ -92,6 +54,50 @@ const search = (() => {
             console.clear()
             clearInput(inputPokemon)
         }
+    }
+
+    const createHtml = (pokemon) => {
+
+        const objPokemon = {
+            imagePokemon: pokemon.sprites.front_default,
+            pokemonName: pokemon.species.name,
+            atack: pokemon.stats[1].base_stat,
+            defence: pokemon.stats[2].base_stat
+        }
+
+        let html = `
+        <div class="box-img-modal">
+            <img src="${objPokemon.imagePokemon}" alt="pokemon">
+        </div>
+
+        <section class="box-modal">
+
+        <h1 id="modal_pokemon_name">${objPokemon.pokemonName}</h1>
+        
+        <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-6">
+                <h4 class="text-left mt-3 class_decoration">Ataque</h4>
+            </div>
+
+            <div class="col">
+                <h4 id="id_abilities" class="text-center mt-3 class_decoration">${objPokemon.atack}</h4>
+            </div>
+
+            <div class="col-6 mt-4">
+                <h4 class="text-left class_decoration">Defensa</h4> <br>
+            </div>
+
+            <div class="col mt-4">
+                <h4 class="text-center class_decoration">${objPokemon.defence}</h4> <br>
+            </div> 
+        </div>
+
+        </div>
+        
+    </section>`
+        return html
     }
 
     const searchInput = (input) => {
