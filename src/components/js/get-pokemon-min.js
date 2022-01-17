@@ -1,0 +1,1 @@
+const getPokemon=async o=>{const t=await fetch(`https://pokeapi.co/api/v2/pokemon/${o}`);return await t.json()};export{getPokemon};
