@@ -107,7 +107,7 @@ const searchInput = (input) => {
         })
         input.value = ""
     } else {
-        searchPokemon(input.value)
+        searchPokemon(input.value.toLowerCase())
     }
 }
 
