@@ -5,7 +5,8 @@
 
 ------------
 ## 📝Descripción
-Aplicación web para el juego de mesa de loteria mexicana, consta con pedir una carta y automaticamente se mezcla el deck para mostrarte la siguiente carta [Click Aqui](https://quienesesepokemon.netlify.app "Click Aqui")
+Aplicacion web para buscar información de ataque y defensa de un pokemon utilizando la Api de pokemon
+ [Click Aqui](https://quienesesepokemon.netlify.app "Click Aqui")
 
 ------------
 
@@ -26,7 +27,7 @@ Aplicación web para el juego de mesa de loteria mexicana, consta con pedir una 
 
 ### 👩🏻‍💻Tecnologias
 - HTML
-- CSS
 - SCSS
 - JS
+- Boostrap
 
